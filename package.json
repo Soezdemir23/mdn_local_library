@@ -1,0 +1,17 @@
+{
+  "name": "mdn_library",
+  "version": "1.0.0",
+  "description": "following the mdn local library tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mdn",
+    "library",
+    "express",
+    "tutorial"
+  ],
+  "author": "Soezdemir23",
+  "license": "CC0-1.0"
+}
