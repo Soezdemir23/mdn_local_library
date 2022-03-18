@@ -6,6 +6,17 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+// set up mongoose connection
+var mongoose = require('mongoose');
+var mongoDB = 'url';
+mongoose.connect(
+  mongoDB,
+  {useNewUrlParser: true, useUnifiedTopology: true},
+  (e) => console.log(e.message)
+);
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 
 var app = express();
 
